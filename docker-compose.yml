@@ -1,0 +1,10 @@
+version: '2'
+services:
+  mt4.1:
+    build: ./winemt4
+    container_name: mt4.1
+    ports:
+      - 15901:5900
+    volumes:
+       - ./data:/root/wine
+    tty: true
