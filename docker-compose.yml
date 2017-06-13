@@ -5,7 +5,6 @@ services:
     container_name: mt4.1
     ports:
       - 15901:5901
-      - 16901:6901
     volumes:
        - ./data:/root/wine
     tty: true
