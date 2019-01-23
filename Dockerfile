@@ -1,3 +1,6 @@
 FROM muchrm/wine-openbox
+ENV DISPLAY=:1
+ARG VNC_PASSWORD=secret
+ENV VNC_PASSWORD ${VNC_PASSWORD}
 WORKDIR /root/mt4
 COPY mt4 .
