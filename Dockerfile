@@ -1,4 +1,4 @@
-FROM muchrm/wine-openbox
+FROM muchrm/wine-openbox:4
 ENV DISPLAY=:1
 ARG VNC_PASSWORD=secret
 ENV VNC_PASSWORD ${VNC_PASSWORD}
